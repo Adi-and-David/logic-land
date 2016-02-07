@@ -12,7 +12,6 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
 - [ ] Get some HTML
 - [ ] Import ThreeJS files
 - [ ] Get a basic ThreeJS view
-- [ ]
 
 #Rules for Contribution
 
