@@ -14,4 +14,15 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
 - [ ] Get a basic ThreeJS view
 - [ ]
 
+#Rules for Contribution
+
+- Everytime we make change, make it in a different branch in a PR
+  - Other person reviews a PR and merges it.
+
+- If we make any database changes (adding new models, migration, adding superusers)
+  - name the branch with "db_" perfix.
+  - While testing this branch, create a new branch and delete it after testing.
+
+
+
 
