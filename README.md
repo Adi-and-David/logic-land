@@ -23,6 +23,8 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
   - name the branch with "db_" perfix.
   - While testing this branch, create a new branch and delete it after testing.
 
+- Append a 'comma' at the end of a hash/list/array
+
 
 
 
