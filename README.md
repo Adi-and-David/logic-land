@@ -7,7 +7,7 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
 
 #TODO List
 
-- [ ] Create Admin users
+- [X] Create Admin users
 - [ ] Add more views
 - [ ] Get some HTML
 - [ ] Import ThreeJS files
