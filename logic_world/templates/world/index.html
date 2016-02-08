@@ -1,0 +1,9 @@
+{% if worlds %}
+    <ul>
+    {% for world in worlds %}
+        <li><a href="/world/{{ world.id }}/"></a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No worlds are available.</p>
+{% endif %}
