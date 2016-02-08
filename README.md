@@ -12,6 +12,8 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
 - [ ] Get some HTML
 - [ ] Import ThreeJS files
 - [ ] Get a basic ThreeJS view
+- [ ] Create models for logic-gates
+- [ ] Shared folder for computation
 
 #Rules for Contribution
 
