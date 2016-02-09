@@ -1,7 +1,7 @@
 {% if worlds %}
     <ul>
     {% for world in worlds %}
-        <li><a href="/world/{{ world.id }}/"></a></li>
+        <li><a href="{% url 'show' world.id %}">{{ world.user_count }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
