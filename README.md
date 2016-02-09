@@ -11,6 +11,7 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
 - [X] Create Admin users
 - [ ] Add more views
 - [ ] Get some HTML
+- [ ] Add front-end framework(Bootstrap, UIkit, ect...) UIkit looks pretty good if we want to learn something new.
 - [ ] Import ThreeJS files
 - [ ] Get a basic ThreeJS view
 - [ ] Create models for logic-gates
