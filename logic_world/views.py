@@ -14,7 +14,7 @@ def index(request):
 def show(request, world_id):
     #Show world with id = id
     world = get_object_or_404(World, pk=world_id)
-    return render(request, 'polls/detail.html', {'world': world})
+    return render(request, 'world/show.html', {'world': world})
 
 #def create(request):
     #create a world
