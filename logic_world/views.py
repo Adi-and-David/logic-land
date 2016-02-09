@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 from django.template import loader
 
 from .models import World
@@ -6,11 +6,10 @@ from .models import World
 def index(request):
     # Show all worlds
     worlds = World.objects.all()
-    template = loader.get_template("world/index.html")
     context = {
         'worlds': worlds
     }
-    return HttpResponse(template.render(context,request))
+    return render(request, "world/index.html", context)
 
 #def show(request, world_id):
     #Show world with id = id
