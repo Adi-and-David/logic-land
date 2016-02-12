@@ -122,3 +122,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Substituting AUTH USER with a our custom user model
+# AUTH_USER_MODEL = 'myapp.MyUser'
