@@ -15,6 +15,5 @@ class User(modelsdModel):
 	world = models.ForeignKey(dWorld)
 '''
 class UserWorldRelation(models.Model):
-	user = models.ForeignKey(User)
 	world =  models.ForeignKey(World)
 	relationship_type = models.CharField(max_length=200)
