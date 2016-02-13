@@ -18,6 +18,7 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
 - [ ] Shared folder for computation
 - [ ] Add unit tests/specs
 - [ ] Use CI for automated testing
+- [ ] Developer's guide
 
 #Rules for Contribution
 
