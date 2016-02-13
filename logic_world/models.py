@@ -10,7 +10,7 @@ class World(models.Model):
 
 # User table and World table should have many-to-many relationship.
 class User(DjangoUser):
-  world_count = models.IntegerField()
+  world_count = models.IntegerField(default=None, blank=True, null=True)
 
 class UserWorldRelation(models.Model):
 	world =  models.ForeignKey(World)
