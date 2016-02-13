@@ -12,6 +12,7 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
 - [ ] Add more views
 - [ ] Get some HTML
 - [ ] Add unit tests/specs (Black Box Testing)
+- [ ] Add custom authentication
 - [ ] Figure out if users table/model could be edited in a migration.
   - [ ] Understanding how the authentication/authorization stuff works in Django.
   - [ ] HTTP Basic Auth.
