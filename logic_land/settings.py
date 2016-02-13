@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.staticfiles',
     'logic_world.apps.LogicWorldConfig',
-    'south',
 ]
 
 MIDDLEWARE_CLASSES = [
