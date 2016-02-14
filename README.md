@@ -22,11 +22,15 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
 - [ ] Get a basic ThreeJS view
 - [ ] Create models for logic-gates
 - [ ] Shared folder for computation
+- [ ] Distribute work accross js and python to optimize efficiency
+- [ ] Add unit tests/specs
+- [ ] Make Developer's guide
 - [X] Use CI for automated testing
 - [ ] Concurrency/Parallelism
 - [ ] Hosting options
-  - [ ] Travis
+  - [X] Travis
   - [ ] Azure
+- [ ] Load balancing
 
 #Rules for Contribution
 

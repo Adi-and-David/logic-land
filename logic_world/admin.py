@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import User
+from .models import CustomUser
 from .models import World
 from .models import UserWorldRelation
 
-admin.site.register(User)
+admin.site.register(CustomUser)
 admin.site.register(World)
 admin.site.register(UserWorldRelation)
 
