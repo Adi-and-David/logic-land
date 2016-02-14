@@ -11,12 +11,26 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
 - [X] Create Admin users
 - [ ] Add more views
 - [ ] Get some HTML
+- [ ] Add unit tests/specs (Black Box Testing)
+- [ ] Add custom authentication
+- [ ] Figure out if users table/model could be edited in a migration.
+  - [ ] Understanding how the authentication/authorization stuff works in Django.
+  - [ ] HTTP Basic Auth.
+- [ ] Reorganize directory structure acc to Django convention.
+- [ ] Add front-end framework(Bootstrap, UIkit, ect...) UIkit looks pretty good if we want to learn something new.
 - [ ] Import ThreeJS files
 - [ ] Get a basic ThreeJS view
 - [ ] Create models for logic-gates
 - [ ] Shared folder for computation
+- [ ] Distribute work accross js and python to optimize efficiency
 - [ ] Add unit tests/specs
-- [ ] Use CI for automated testing
+- [ ] Make Developer's guide
+- [X] Use CI for automated testing
+- [ ] Concurrency/Parallelism
+- [ ] Hosting options
+  - [X] Travis
+  - [ ] Azure
+- [ ] Load balancing
 
 #Rules for Contribution
 
@@ -30,10 +44,12 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
 - For an update in the code, follow Test Driven Development.
 
 - If we make any database changes (adding new models, migration, adding superusers)
-  - name the branch with "db_" perfix.
+  - add the label "db"
   - For testing this branch, create a new branch and delete it after testing.
 
 - Append a 'comma' and 'new line' at the end of a hash/list/array.
+
+- If you start working on something, just open a PR with wip.
 
 
 
