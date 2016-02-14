@@ -13,12 +13,12 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
 - [ ] Get some HTML
 - [ ] Add unit tests/specs (Black Box Testing)
 - [ ] Add custom authentication
-- [ ] Figure out if users table/model could be edited in a migration.
-  - [ ] Understanding how the authentication/authorization stuff works in Django.
+- [X] Figure out if users table/model could be edited in a migration.
+  - [X] Understanding how the authentication/authorization stuff works in Django.
   - [ ] HTTP Basic Auth.
-- [ ] Reorganize directory structure acc to Django convention.
+- [X] Reorganize directory structure acc to Django convention.
 - [ ] Add front-end framework(Bootstrap, UIkit, ect...) UIkit looks pretty good if we want to learn something new.
-- [ ] Import ThreeJS files
+- [X] Import ThreeJS files
 - [ ] Get a basic ThreeJS view
 - [ ] Create models for logic-gates
 - [ ] Shared folder for computation
