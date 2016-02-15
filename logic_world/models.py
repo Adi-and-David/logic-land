@@ -28,3 +28,9 @@ class WorldElement(models.Model):
 class Input(WorldElement):
   parent = models.ForeignKey(WorldElement, on_delete=models.CASCADE, null=True)
   value = models.BooleanField(default=False)
+
+class Gate(WorldElement):
+  left_child = models.ForeignKey(WorldElement, on_delete=models.CASCADE, null=True)
+  right_child = models.ForeignKey(WorldElement, on_delete=models.CASCADE, null=True)
+  gate_type = models.CharField(max_length=200)
+
