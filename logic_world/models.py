@@ -25,3 +25,6 @@ class WorldElement(models.Model):
   y = models.IntegerField(default=0, blank=True, null=True)
   z = models.IntegerField(default=0, blank=True, null=True)
 
+class Input(WorldElement):
+  parent = models.ForeignKey(WorldElement, on_delete=models.CASCADE, null=True)
+  value = models.BooleanField(default=False)
