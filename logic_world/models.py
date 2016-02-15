@@ -26,11 +26,12 @@ class WorldElement(models.Model):
   z = models.IntegerField(default=0, blank=True, null=True)
 
 class Input(WorldElement):
-  parent = models.ForeignKey(WorldElement, on_delete=models.CASCADE, null=True)
+  parent = models.ForeignKey(WorldElement, on_delete=models.CASCADE, null=True, related_name='input_left')
   value = models.BooleanField(default=False)
 
 class Gate(WorldElement):
-  left_child = models.ForeignKey(WorldElement, on_delete=models.CASCADE, null=True)
-  right_child = models.ForeignKey(WorldElement, on_delete=models.CASCADE, null=True)
+  left_child = models.ForeignKey(WorldElement, on_delete=models.CASCADE, null=True, related_name='gate_left_input')
+  right_child = models.ForeignKey(WorldElement, on_delete=models.CASCADE, null=True,  related_name='gate_right_input')
+  output = models.BooleanField(default=False)
   gate_type = models.CharField(max_length=200)
 
