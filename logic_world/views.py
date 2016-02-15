@@ -18,4 +18,5 @@ def show(request, world_id):
 
 def create(request):
     # create a world
-    new_world = World.objects.
+    new_world = World.create()
+    return render(request, 'world/new.html', {'world': world})
