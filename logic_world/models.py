@@ -11,8 +11,19 @@ class CustomUser(DjangoUser):
   world_count = models.IntegerField(default=0, blank=True, null=True)
 
 class World(models.Model):
+  world_name = models.CharField(max_length=200, default='Untitled')
   creator = models.ForeignKey(CustomUser, on_delete=models.CASCADE, null=True)
   user_count = models.IntegerField(default=0, blank=True, null=True)
+
+  @classmethod
+  def create(cls, world_name):
+    if world_name is None:
+      world = cls(world_name=world_name)
+      world.save()
+    else:
+      world = cls()
+      world.save()
+    return world
 
 class UserWorldRelation(models.Model):
   world = models.ForeignKey(World, on_delete=models.CASCADE, null=True)
