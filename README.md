@@ -19,7 +19,11 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
 - [X] Reorganize directory structure acc to Django convention.
 - [ ] Add front-end framework(Bootstrap, UIkit, ect...) UIkit looks pretty good if we want to learn something new.
 - [X] Import ThreeJS files
-- [ ] Get a basic ThreeJS view
+- [X] Get a basic ThreeJS view
+- [ ] Clean up ThreeJS files
+  - [ ] Not all examples are needed
+  - [ ] Not all textures are needed
+  - [ ] Get rid of the quadcopter and goku file.
 - [ ] Create models for logic-gates
   - [ ] Back-end
   - [ ] Front-end
