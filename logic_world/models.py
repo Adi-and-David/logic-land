@@ -37,7 +37,7 @@ class WorldElement(models.Model):
   z = models.IntegerField(default=0, blank=True, null=True)
   value = models.BooleanField(default=False)
 
-  def get_position:
+  def get_position():
     return x, y, z
 
 class Input(WorldElement):
@@ -49,13 +49,13 @@ class Gate(WorldElement):
   right_child = models.ForeignKey(WorldElement, on_delete=models.CASCADE, null=True,  related_name='gate_right_input')
   gate_type = models.CharField(max_length=200)
 
-  def compute_value:
+  def compute_value():
     if gate_type == 'AND':
-      self.value = right_child.value && left_child.value
+      self.value = (right_child.value & left_child.value)
     elif gate_type == 'OR':
-      self.value = right_child.value || left_child.value
+      self.value = (right_child.value | left_child.value)
     elif gate_type == 'NOT':
-      self.value = !(left_child.value)
+      self.value = not(left_child.value)
     # TO DO
     # elif gate_type == 'XOR':
     # elif gate_type == 'NOR':
