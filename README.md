@@ -17,7 +17,7 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
   - [X] Understanding how the authentication/authorization stuff works in Django.
   - [ ] HTTP Basic Auth.
 - [X] Reorganize directory structure acc to Django convention.
-- [ ] Add front-end framework(Bootstrap, UIkit, ect...) UIkit looks pretty good if we want to learn something new.
+- [X] Add front-end framework(Bootstrap, UIkit, ect...) UIkit looks pretty good if we want to learn something new.
 - [X] Import ThreeJS files
 - [ ] Get a basic ThreeJS view
 - [ ] Create models for logic-gates
