@@ -16,5 +16,7 @@ def show(request, world_id):
     world = get_object_or_404(World, pk=world_id)
     return render(request, 'world/show.html', {'world': world})
 
-#def create(request):
-    #create a world
+def create(request):
+    # create a world
+    new_world = World.create()
+    return render(request, 'world/new.html', {'world': world})
