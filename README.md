@@ -17,7 +17,7 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
   - [ ] Understanding how the authentication/authorization stuff works in Django.
   - [ ] HTTP Basic Auth.
 - [ ] Reorganize directory structure acc to Django convention.
-- [ ] Add front-end framework(Bootstrap, UIkit, ect...) UIkit looks pretty good if we want to learn something new.
+- [X] Add front-end framework(Bootstrap, UIkit, ect...) UIkit looks pretty good if we want to learn something new.
 - [ ] Import ThreeJS files
 - [ ] Get a basic ThreeJS view
 - [ ] Create models for logic-gates
@@ -46,7 +46,3 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
 - Append a 'comma' and 'new line' at the end of a hash/list/array.
 
 - If you start working on something, just open a PR with wip.
-
-
-
-
