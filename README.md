@@ -52,7 +52,3 @@ App/Models (make migration) => DB/Tables (sqlmigrate) => App/dbsqlite (migrate)
 - Append a 'comma' and 'new line' at the end of a hash/list/array.
 
 - If you start working on something, just open a PR with wip.
-
-
-
-
